@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
@@ -16,14 +17,17 @@
       <div class="input-box">
         <label for="day">DAY</label>
         <input type="number" id="day" name="day" placeholder="DD">
+        <p class="error">Error Error</p>
       </div>
       <div class="input-box">
         <label for="month">MONTH</label>
         <input type="number" id="month" name="month" placeholder="MM">
+        <p class="error">Error Error</p>
       </div>
       <div class="input-box">
         <label for="year">YEAR</label>
         <input type="number" id="year" name="year" placeholder="YYYY">
+        <p class="error">Error Error</p>
       </div>
     </div>
     <div class="btn-container">
@@ -32,10 +36,10 @@
         <img src="assets/images/icon-arrow.svg" alt="Arrow">
       </button>
     </div>
-    <div class="display-container">
-      <p><span id="year-val">--</span> years</p>
-      <p><span id="month-val">--</span> months</p>
-      <p><span id="days-val">--</span> days</p>
+    <div class="val-box">
+      <p><span id="year-val" class="val">90</span> years</p>
+      <p><span id="month-val" class="val">90</span> months</p>
+      <p><span id="days-val" class="val">90</span> days</p>
     </div>
   </div>
 </body>

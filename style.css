@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -6,4 +7,124 @@
 html,body{
     height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 94%);
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    background-color: hsl(0, 0%, 100%);
+    padding: 30px;
+    border-radius: 15px 15px 150px 15px;
+}
+
+.input-container{
+    display: flex;
+    gap: 20px;
+    /* max-width: ; */
+    /* Add max width after the btn container  */
+}
+.input-box label{
+    display: block;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: hsl(0, 1%, 44%);
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+.input-box input{
+    width: 130px;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 10px;
+    caret-color: hsl(259, 100%, 65%);
+    outline: transparent;
+    border-radius: 8px;
+    border: 1px solid hsl(0, 0%, 86%);
+}
+
+input::-webkit-inner-spin-button ,input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+.input-box .error{
+    color: hsl(0, 100%, 67%);
+    font-size: small;
+    font-style: italic;
+    display: none;
+}
+.input-box input:focus , .input-box input:hover{
+    transition: all .2s ease-in-out;
+    border: 1px solid hsl(259, 100%, 65%);
+}
+.error-label{
+    transition: all .2s ease-in-out;
+    color: hsl(0, 100%, 67%);
+}
+.error-input{
+    transition: all .2s ease-in-out;
+    border-color: hsl(0, 100%, 67%);
+}
+.input-box input::placeholder{
+    color: hsl(0, 1%, 44%);
+}
+.btn-container{
+    position: relative;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+.line{
+    width: 500px;
+    height: 2px;
+    background-color: hsl(0, 0%, 86%);
+}
+.btn-container #btn{
+    border: none;
+    padding:15px;
+    border-radius: 50%;
+    background-color: hsl(259, 100%, 65%);
+    cursor: pointer;
+}
+.btn-container #btn:hover{
+    transition: all .2s ease-in-out;
+    background-color: hsl(0, 0%, 8%);
+}
+.btn-container #btn img{
+    width: 40px;
+}
+
+.val-box p{
+    font-size: 60px;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 60px;
+}
+.val-box .val{
+    color: hsl(259, 100%, 65%);
+}
+@media screen and (max-width: 600px){
+    .container{
+        width: 90%;    
+    }
+    .input-container{
+        gap: 7px;
+    }
+
+    .line{
+        width: 100%;
+    }
+    .input-box input{
+        font-size: 23px;
+        width: 100%;
+    }
+    .val-box p{
+        font-size: 45px;
+    }
+    #btn{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
