@@ -47,23 +47,16 @@ html,body{
 input::-webkit-inner-spin-button ,input::-webkit-outer-spin-button{
     -webkit-appearance: none;
 }
-.input-box .error{
+.error{
     color: hsl(0, 100%, 67%);
     font-size: small;
     font-style: italic;
     display: none;
+    margin-top: 8px;
 }
 .input-box input:focus , .input-box input:hover{
     transition: all .2s ease-in-out;
     border: 1px solid hsl(259, 100%, 65%);
-}
-.error-label{
-    transition: all .2s ease-in-out;
-    color: hsl(0, 100%, 67%);
-}
-.error-input{
-    transition: all .2s ease-in-out;
-    border-color: hsl(0, 100%, 67%);
 }
 .input-box input::placeholder{
     color: hsl(0, 1%, 44%);
