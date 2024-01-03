@@ -96,6 +96,7 @@ function displayCount(dateOfBirth) {
         sm = 11;
         sy--;
     }
+
     document.getElementById("year-val").textContent = sy;
     document.getElementById("month-val").textContent = sm;
     document.getElementById("days-val").textContent = sd;
